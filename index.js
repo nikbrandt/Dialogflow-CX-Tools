@@ -58,7 +58,7 @@ const toolsDir = fs.readdirSync('tools');
 const tools = {};
 let toolList = [];
 
-tools.exit = () => {
+tools.exit = tools.c = () => {
     console.log('\nSee ya.');
     process.exit();
 }
@@ -118,15 +118,11 @@ if (Array.isArray(config)) {
 // set LinkClient vars
 
 function setVars() {
-    console.log(config);
-
     const funcs = require('./helpers/LinkClient');
 
     funcs.updateAgent(config.agentID);
     funcs.updateLocation(config.locationID);
     funcs.updateProject(config.projectID);
-
-    console.log('success');
 }
 
 // prompt for tools
@@ -137,7 +133,7 @@ function prompt() {
 
         if (answer in tools) {
             console.log();
-            await tools[answer]();
+            await tools[answer](rl);
             console.log('\n');
             prompt();
         } else {
