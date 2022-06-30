@@ -1,0 +1,21 @@
+{
+    "version": "v3",
+    "scopes": [
+        "https://www.googleapis.com/auth/cloud-platform",
+        "https://www.googleapis.com/auth/dialogflow"
+    ],
+    "endpoints": {
+        "global": "https://dialogflow.googleapis.com",
+        "asia-northeast1": "https://asia-northeast1-dialogflow.googleapis.com",
+        "asia-south1": "https://asia-south1-dialogflow.googleapis.com",
+        "asia-southeast1": "https://asia-southeast1-dialogflow.googleapis.com",
+        "australia-southeast1": "https://australia-southeast1-dialogflow.googleapis.com",
+        "europe-west1": "https://europe-west1-dialogflow.googleapis.com",
+        "europe-west2": "https://europe-west2-dialogflow.googleapis.com",
+        "europe-west3": "https://europe-west3-dialogflow.googleapis.com",
+        "northamerica-northeast1": "https://northamerica-northeast1-dialogflow.googleapis.com",
+        "us-central1": "https://us-central1-dialogflow.googleapis.com",
+        "us-east1": "https://us-east1-dialogflow.googleapis.com",
+        "us-west1": "https://us-west1-dialogflow.googleapis.com"
+    }
+}

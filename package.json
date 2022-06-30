@@ -1,0 +1,22 @@
+{
+  "name": "dialogflowtools",
+  "version": "1.0.0",
+  "description": "Command line tools for useful functions Dialogflow does not natively implement",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikbrandt/CCSF-Dialogflow-Tools.git"
+  },
+  "author": "Nikolas Brandt",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/nikbrandt/CCSF-Dialogflow-Tools/issues"
+  },
+  "homepage": "https://github.com/nikbrandt/CCSF-Dialogflow-Tools#readme",
+  "dependencies": {
+    "google-auth-library": "^8.0.3"
+  }
+}

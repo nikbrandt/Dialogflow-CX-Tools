@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# JS
+node_modules/
+
+# secrets
+config.json
+key.json
