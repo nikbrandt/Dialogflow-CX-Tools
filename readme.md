@@ -11,9 +11,9 @@ A collection of useful tools that Google Dialogflow (CX) does not implement itse
    - `locationID` — Chatbot location ID (supported location IDs are the keys of the `endpoints` object in `apiSettings.json`)
    - `agentID` — Specific agent ID
 3. If desired, create multiple of the above object types and place them in an array within `config.json` to have multiple configs to choose between
-   - If necessary, edit `apiSettings.json` to change the endpoint, version, or login scopes. This generally shouldn't be required.
+   - If necessary, edit `apiSettings.json` to change the endpoint, version, or login scopes. This generally shouldn't be required (and choosing a different API version may break some or all of the tools).
 4. Create a service account key on [Google Cloud](https://console.cloud.google.com/apis/credentials/serviceaccountkey) and download the key JSON file. Rename it to `key.json` and place it in this directory.
-5. `npm i` to install dependencies
+5. Run `npm i` to install dependencies
 6. `node .` to run the tools application. It will guide you through choosing config, tools, etc.
 
 ## API Limits
@@ -31,3 +31,18 @@ Lists all intents without training phrases for the logged-in agent.
 ### savePhrases
 
 Saves all phrases (from all or one specific intent) to a file of your choice. Useful for importing back into Dialogflow on another agent, for example (note: if exporting all intents, you must manually separate intents out into other files. Support for create a file per intent may be added in the future).
+
+## Future plans
+
+If time (and development constraints) allow, I'll hopefully add the following tools/features:
+
+ * **Sync**: For syncing, from one config to another, an intent, phrases, an entity, or other useful types
+    * Additionally, syncing route groups across flows within an agent
+ * **Cache**: Keeping a cache of previous requests in the current session, so you can choose, for example, from a previous list of intents which intent you'd like to save.
+ * Whatever else sounds useful!
+
+## Attribution
+
+I'm Nikolas Brandt!
+
+I have not yet decided licensing. For now, basic US copyright law holds.
